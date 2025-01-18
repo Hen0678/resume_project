@@ -1,0 +1,23 @@
+/* google fonts style sheet with Roboto and Exo added (divided by pipe separator */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+header {
+    margin: 0;
+}
+
+.logo {
+    background: url("../images/rosie.jpg");
+    background-position: center;
+    /* So image appears once */
+    background-repeat: no-repeat;
+    /* Covers container it's sitting inside */
+    background-size: cover;
+    min-height: 360px;
+    /* Animation when the page loads */
+    transition: all .5s ease-in-out;
+    /* moz / webkit so that the animation works in different browsers */
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+ 
