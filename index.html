@@ -10,7 +10,8 @@
 </head>
 <body>
     <header>
-        <div class="row">
+        <!-- no-gutters takes away the default padding provided by bootstrap-->
+        <div class="row no-gutters">
             <!-- For screens medium break point or larger (will take up 4 out of 12 columns or 1/3rd) 
             a tag will be logo which will link back to main html page
             logo has been added as a separate class so it can be styled later
@@ -21,7 +22,7 @@
              
             <!-- For screens medium break point or larger (will take up 8 out of 12 columns or 2/3rd's) -->
             <div class="col-md-8">
-                <div class="row bg-color-name-title">
+                <div class="row no-gutters bg-color-name-title">
                     <!-- col without number provides full width column-->
                     <div class="col heading">
                         <h1 class="name">Rosie Odenkirk</h1>
@@ -29,6 +30,28 @@
 
                     </div>
 
+                </div>
+                <div class="row no-gutters">
+                    <div class="col">
+                        <!--  list-inline is from bootstrap and displays horizontally-->
+                        <ul id="nav" class="list-inline menucontainer">
+                            <!-- col-6 with displays 2 columns on mobile
+                             col-sm-3 will display 4 columns on devices smalles or higher -->
+                            <!-- you need to give all li items the list-inline-item class when using list-inline-->
+                             <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item">
+                                <a href="#"><span>Home</span></a>
+                             </li>
+                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item">
+                                <a href="#"><span>Resume</span></a>
+                             </li>
+                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item">
+                                <a href="#"><span>Contact</span></a>
+                             </li>
+                             <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item">
+                                <a href="#"><span>Download</span></a>
+                             </li>
+                        </ul>
+                    </div>
                 </div>
                 
             </div>
